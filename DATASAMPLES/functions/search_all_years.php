@@ -28,19 +28,26 @@
 	$totalvideosize = 0;
 	$totalcsvsize = 0;
 	
+	echo "<tr><td><h4>Videos:</h4></td></tr>";
+	
 	foreach (glob("../VIDEOS/ALLYEARS/*.flv") as $filename) {
 		if (newmatched($filename, $sitesncameras, $startdate, $stopdate)) {
 		// if (matched($filename, $sites, $cameras, $startdate, $stopdate)) {
 			// echo "matched!<br/>";
-			if ($counter <= 50) {
 		//		echo "counter " . $counter; 
-				$counter++;
-				array_push($videofiles, $filename);
-				$totalvideosize += filesize($filename);
+			$counter++;
+			array_push($videofiles, $filename);
+			$totalvideosize += filesize($filename);
+			if ($counter <= 50) {
 				echo "<tr class='filename'><td><a href='$filename'>" . $counter . ". " . basename($filename) . "</a> (" . number_format(filesize($filename)/1024, 3) .  " KBs)</td></tr>";
 			}
 		}
 	}
+	
+	if ($counter > 50) {
+		echo "<tr><td>...</td></tr>";
+	}
+
 		
 	if ($counter == 0) {
 		echo "<tr><td>No CSV file found.</td></tr>";
@@ -49,20 +56,27 @@
 	
 	echo "<tr/><tr/>";
 	
+	echo "<tr><td><h4>CSVs:</h4></td></tr>";
+	
 	$counter = 0;
 	
 	foreach (glob("../SQL/ALLYEARS/*.csv") as $filename) {
 		if (newmatched($filename, $sitesncameras, $startdate, $stopdate)) {
 		// if (matched($filename, $sites, $cameras, $startdate, $stopdate)) {
 			// echo "matched!<br/>";
-			if ($counter <= 50) {
+			
 			// echo "counter " . $counter; 
-				$counter++;
-				array_push($csvfiles, $filename);
-				$totalcsvsize += filesize($filename);
+			$counter++;
+			array_push($csvfiles, $filename);
+			$totalcsvsize += filesize($filename);
+			if ($counter <= 50) {
 				echo "<tr class='filename'><td><a href='$filename'>" . $counter . ". " . basename($filename) . "</a> (" . number_format(filesize($filename)/1024, 3) .  " KBs)</td></tr>";
 			}
 		}			
+	}
+	
+	if ($counter > 50) {
+		echo "<tr><td>...</td></tr>";
 	}
 		
 	if ($counter == 0) {

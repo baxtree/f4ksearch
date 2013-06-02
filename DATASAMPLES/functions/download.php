@@ -2,7 +2,7 @@
 	ini_set('max_execution_time', 120);
 	require(dirname(__FILE__) . "/../templates/_header.php");
 	
-	echo "<tr><td valign='top' style='width: 700px'><h3>Search Results -> Downloadable Datasets</h3></tr>";
+	echo "<tr><td valign='top' style='width: 700px'><h3>Downloadable Datasets</h3></tr>";
 	
 	// print_r(glob("../VIDEOS/ALLYEARS/*.flv"));
 	$videofiles = unserialize(base64_decode($_POST["videofiles"]));
@@ -47,7 +47,7 @@
 	if (count($videofiles) != 0) {
 		foreach ($videoziparray as $videozip) {
 			chmod($videozip, 0775);
-			echo "<tr><td><a href='$videozip'>Click to download all the videos as ZIP (" . number_format(filesize($videozip)/1048576, 3) . " MBs) ...</a></td></tr>";
+			echo "<tr class='download'><td><a href='$videozip'>Click to download all the videos as ZIP (" . number_format(filesize($videozip)/1048576, 3) . " MBs) ...</a></td></tr>";
 		}
 	}
 	else {
@@ -67,14 +67,14 @@
 	
 	if (count($csvfiles) != 0) {
 		chmod($csvzippath, 0775);
-		echo "<tr><td><a href='../TMP/SQL/$csvzipname'>Click to download all the CSVs as ZIP (" . number_format(filesize($csvzippath)/1048576, 3) . " MBs) ...</a></td></tr>";		
+		echo "<tr class='download'><td><a href='../TMP/SQL/$csvzipname'>Click to download all the CSVs as ZIP (" . number_format(filesize($csvzippath)/1048576, 3) . " MBs) ...</a></td></tr>";		
 	}
 	else {
 		echo "Cannot open the ../TMP/VIDEOS/$csvzipname";
 	}
 	
 	echo "<tr/><tr/>";
-	echo "<tr><td><a href='../search.html'>Back to Search</a></td></tr>";
+	echo "<tr class='backtosearch'><td><a href='../search.html'>Back to Search</a></td></tr>";
 	
 	require(dirname(__FILE__) . "/../templates/_footer.php");
 ?>

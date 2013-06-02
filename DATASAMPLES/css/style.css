@@ -8,6 +8,9 @@
 	
 	#tabs {
 		min-height: 320px;
+		width: 650px;
+		padding-right: 0px;
+		margin-right: 0px;
 	}
 	
 	#startday, #stopday, #fulldate {
@@ -26,6 +29,66 @@
 	
 	tr.filename {
 		padding: 0;
+	}
+	
+	tr.filename a:link {
+		text-decoration: none;
+		color: rgb(133, 142, 79);
+	}
+	
+	tr.filename a:active {
+		text-decoration: none;
+		color: rgb(133, 142, 79);
+	}
+	
+	tr.filename a:hover {
+		text-decoration: none;
+		color: rgb(0, 0, 167);
+	}
+	
+	tr.filename a:visited {
+		text-decoration: none;
+		color: rgb(133, 142, 79);
+	}
+	
+	tr.download a:link {
+		text-decoration: none;
+		color: rgb(133, 142, 79);
+	}
+	
+	tr.download a:active {
+		text-decoration: none;
+		color: rgb(133, 142, 79);
+	}
+	
+	tr.download a:hover {
+		text-decoration: none;
+		color: rgb(0, 0, 167);
+	}
+	
+	tr.download a:visited {
+		text-decoration: none;
+		color: rgb(133, 142, 79);
+	}
+	
+	tr.backtosearch a:link, #schema:link{
+		text-decoration: underline;
+		color: rgb(133, 142, 79);
+	}
+	
+	tr.backtosearch a:active, #schema:active {
+		text-decoration: underline;
+		color: rgb(133, 142, 79);
+	}
+	
+	tr.backtosearch a:hover, #schema:hover {
+		text-decoration: underline;
+		color: rgb(0, 0, 167);
+	}
+
+	tr.backtosearch a:visited, #schema:visited {
+		text-decoration: underline;
+		color: rgb(133, 142, 79);
 	}
 
 	table.form-table td {
@@ -46,5 +109,9 @@
 	}
 	
 	.odd {
-		background: #ccc;
+		background: rgba(168, 178, 111, .5);
+	}
+	
+	#searchrs {
+		margin-right: 300px;
 	}

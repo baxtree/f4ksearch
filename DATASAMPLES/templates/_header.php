@@ -113,7 +113,7 @@ http://validator.w3.org/check?uri=http%3A%2F%2Fhomepages.inf.ed.ac.uk%2Frbf%2FFi
 	    <td>
 	      <div id="tekst"> 
 
-		<table cellspacing="20" style="width: 700px">
+		<table id="searchrs" cellspacing="5" style="width: 400px">
 		  <tbody>
 EOT;
 ?>

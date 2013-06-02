@@ -1,0 +1,1 @@
+detection_id, detection_component_id, recognition_component_id, fish_id, video_id, frame_id, bounding_box_x, bounding_box_y, bounding_box_w, bounding_box_h, specie_id, det_certainty, track_certainty, rec_certainty, contour
