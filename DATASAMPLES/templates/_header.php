@@ -26,47 +26,10 @@ http://validator.w3.org/check?uri=http%3A%2F%2Fhomepages.inf.ed.ac.uk%2Frbf%2FFi
   <link rel="stylesheet" href="../jquery/jquery-ui.min.css">
   <script type="text/javascript" src="../jquery/jquery-1.9.1.js"></script>
   <script type="text/javascript" src="../jquery/jquery-ui.min.js"></script>
-  <script type="text/javascript">
-  	$(function () {
-		$("#tabs").tabs();
-		$("#startday").datepicker();
-		$("#stopday").datepicker();
-		$("#fulldate").datepicker();
-  	});
-  </script>
-  <style type="text/css">
-  	.ui-tabs .ui-tabs-nav, .ui-datepicker-header {
-	   background-color: rgba(168, 178, 111, .70);
-	}
-	
-	.ui-tabs .ui-tabs-nav a {
-	   color: rgb(168, 178, 111);
-	}
-	
-	#tabs {
-		min-height: 320px;
-	}
-	
-	#startday, #stopday, #fulldate {
-	   width: 100px;
-	}
-	
-	#allyears, #fullday {
-		font-size: smaller;
-	}
-	
-	span.hidden {
-	   margin-left: 135px;
-	}
-	
-	.searchbtn {
-		float: right;
-		margin-top: 10px;
-		margin-bottom: 10px;
-	}
-	
-	
-  </style>
+  <script type="text/javascript" src="../jquery/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="../jquery/jquery.multiselect.min.js"></script>
+  <script type="text/javascript" src="../javascript/general.js"></script>
+  <link rel="stylesheet" href="../css/style.css">	
 </head>
 
 <body bgcolor="#FFFFFF">

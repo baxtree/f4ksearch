@@ -1,0 +1,50 @@
+	.ui-tabs .ui-tabs-nav, .ui-datepicker-header .ui-datepicker-title {
+	   background-color: rgba(168, 178, 111, .30);
+	}
+	
+	.ui-tabs .ui-tabs-nav a {
+	   color: rgb(168, 178, 111);
+	}
+	
+	#tabs {
+		min-height: 320px;
+	}
+	
+	#startday, #stopday, #fulldate {
+	   width: 100px;
+	}
+	
+	#allyears, #fullday {
+		font-size: smaller;
+	}
+	
+	.searchbtn {
+		float: right;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	
+	tr.filename {
+		padding: 0;
+	}
+
+	table.form-table td {
+		vertical-align: text-bottom;
+		padding: 5px 10px;
+	}
+	
+	ul {
+		list-style-type: none;
+	}
+	
+	select.multiselect option, div.ui-multiselect-menu, li label.ui-corner-all {
+		width: 220px !important;
+	}
+	
+	select.singleselect option, button.radio {
+		width: 110px !important;
+	}
+	
+	.odd {
+		background: #ccc;
+	}
