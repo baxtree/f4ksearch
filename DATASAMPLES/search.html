@@ -1,0 +1,526 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<!--
+
+validate with:
+http://validator.w3.org/check?uri=http%3A%2F%2Fhomepages.inf.ed.ac.uk%2Frbf%2FFish4Knowledge%index.html
+
+-->
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" CONTENT="text/html; CHARSET=utf-8"> 
+  <meta http-equiv="Content-Style-Type" CONTENT="text/css">
+  <meta name="description" content="Fish4Knowledge page">
+  <meta name="keywords" lang="en" content="European Project Fish4Knowledge, F4K">
+  <meta name="resource-type" content="document">
+  <meta name="distribution" content="global">
+  <LINK REL="SHORTCUT ICON" HREF="images/fish.ico">
+  <link rel="stylesheet" href="atcampus.css" type="text/css">
+  <link rel="stylesheet" href="css.css" type="text/css">
+  
+  <title>Fish4Knowledge Homepage</title>
+  
+  <link rel="stylesheet" href="jquery/jquery-ui.min.css">
+  <link rel="stylesheet" href="jquery/jquery.multiselect.css">
+  <script type="text/javascript" src="jquery/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="jquery/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="jquery/jquery.multiselect.min.js"></script>
+  <script type="text/javascript">
+  	$(function () {
+		$("#tabs").tabs();
+		$("#startday").datepicker({ 
+			"dateFormat" : "dd/mm/yy",
+			"defaultDate": new Date(Date.parse("10/01/2010"))
+		});
+		$("#stopday").datepicker({ 
+			"dateFormat" : "dd/mm/yy",
+			"defaultDate": new Date(Date.parse("07/31/2013"))
+		});
+		$("#fulldate").datepicker({ 
+			"dateFormat" : "dd/mm/yy"
+		});
+		$(".multiselect").multiselect({
+ 			"noneSelectedText" : "Select sites and cameras",
+ 			"classes" : "checkbox"
+		});
+		$(".singleselect").multiselect({
+			"multiple" : false,
+			"classes" : "radio",
+			"header" : "Hour : Min",
+			"noneSelectedText" : "Select a time",
+			"selectedList" : 1
+
+		});
+  	});
+  </script>
+  <style type="text/css">
+  	.ui-tabs .ui-tabs-nav, .ui-datepicker-header .ui-datepicker-title {
+	   background-color: rgba(168, 178, 111, .30);
+	}
+	
+	.ui-tabs .ui-tabs-nav a {
+	   color: rgb(168, 178, 111);
+	}
+	
+	#tabs {
+		min-height: 320px;
+	}
+	
+	#startday, #stopday, #fulldate {
+	   width: 100px;
+	}
+	
+	#allyears, #fullday {
+		font-size: smaller;
+	}
+	
+	.searchbtn {
+		float: right;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	
+	tr.filename {
+		padding: 0;
+	}
+
+	table.form-table td {
+		vertical-align: text-bottom;
+		padding: 5px 10px;
+	}
+	
+	ul {
+		list-style-type: none;
+	}
+	
+	select.multiselect option, div.ui-multiselect-menu, li label.ui-corner-all {
+		width: 220px !important;
+	}
+	
+	select.singleselect option, button.radio {
+		width: 110px !important;
+	}
+	
+  </style>
+</head>
+
+<body bgcolor="#FFFFFF">
+  <table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+      <td>
+	<div id="top_bar">
+	  <table cellpadding="0" cellspacing="0" border="0">
+	    <tr>
+	      <td width="191" height="140">
+	      </td>
+	      <td width="700" height="140" align="center">
+		<table cellpadding="0" cellspacing="0" border="0">
+		  <tr>
+		    <td width="536" height="140" align="center">
+		      <h2> Fish4Knowledge Homepage </h2>
+		    </td>
+
+		    <td valign="bottom" width="164" height="140">
+		      <IMG SRC="images/logo.jpg" NAME="logo" ALT="logo" width="148" height="120" BORDER=0>
+		    </td>
+		  </tr>
+		</table>
+	      </td>
+	      <td valign="top" width="191" height="140">
+	      </td>
+	    </tr>
+	    <tr>
+		  
+	      <td height="20">
+	      </td>
+	      <td>
+		<table cellpadding="0" cellspacing="0" border="0">
+		  <tr>
+		    <td width="90" align="center" valign="middle">
+		      <a href="index.html" class="menulink">Home</a>
+		    </td>
+		    <td width="90" align="center" valign="middle">
+		      <a href="overview.htm" class="menulink">Overview</a>
+		    </td>
+		    <td width="90" align="center" valign="middle">
+		      <a href="people.htm" class="menulink">People</a>
+		    </td>
+		    <td width="90" align="center" valign="middle">
+		      <a href="resources.htm" class="menulink">Resources</a>
+		    </td>
+		    <td width="90" align="center" valign="middle">
+		      <a href="news.htm" class="menulink">News</a>  
+		    </td>
+		    <td width="90" align="center" valign="middle">
+		      <a href="contact.htm" class="menulink">Contact</a>  
+		    </td>
+		    <td width="90" align="center" valign="middle">
+		      <a href="MEMBERS/index.html" class="menulink">Members</a>  
+		    </td>
+		    <td width="90" align="center" valign="middle">
+		      <a href="search.html" class="menulink">Search</a>  
+		    </td>
+
+		  </tr>
+		</table>
+	      </td>
+	      <td>
+	      </td>
+	    </tr>
+	    <tr>
+	      <td height="1"> </td>		
+	      <td height="1" bgcolor="#a8b26f"><img alt="" src="images/spacer.gif" width="1" height="1" border="0"></td>
+	      <td height="1"> </td>
+	    </tr>
+	  </table>
+	</div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+	<table cellpadding="0" cellspacing="0" border="0">
+	  <tr>
+ 	    <td width="191" >
+	    </td>
+	    <td>
+	      <div id="tekst"> 
+			
+		<table cellspacing="20" style="width: 700px">
+		  <tbody>
+		    <tr>	
+		      <td valign="top" style="width: 700px">
+			<h3>Downloadable Datasets</h3>
+			<p>This page provides a subset of the full Fish4Knowledge video and
+			fish analysis dataset, which is about 200 Tb in size. See ***URL***
+			for downloading options from the full video data.</p>
+
+			<p>There are two interesting subsets of the data that are provided here:</p>
+			<ul>
+				  <li>1) All Years: a 10 minute video clip from all cameras taken at 12:00
+				  every day in the project Oct 1, 2010 - July 31, 2013, giving
+				  approximately 10K video clips. This data allows analysis of fish
+				  patterns over annual cycles and comparison between sites.</li>
+
+				  <li>2) Full Day: all 720 video clips from the 10 cameras taken from
+				  06:00 - 18:00. This data allows analysis of fish
+				  patterns over a full day period and comparison between sites.</li>
+			</ul>
+			<p>There are 4 sites with different numbers of cameras:</p>
+			<ul>
+				<li>1 - NPP: 4 cameras</li>
+			    <li>2 - HoBiHu harbour: 2 cameras</li>
+			    <li>3 - Lanyu/Orchid Island - 2 cameras</li>
+			    <li>4 - Kenting Harbour - 2 cameras</li>
+			</ul>	
+			<div id="tabs">
+				<ul>
+						<li><a href="#tab1">All Years</a></li>
+						<li><a href="#tab2">Full Day</a></li>
+				</ul>
+				<div id="tab1">
+				  <p>The "All Years" dataset consists of video from all cameras at the 4 sites,
+				  for the time period 12:00-12:10, for all video capture days
+				  a single date: April ***, 2011. (Except for some videos, where there
+				  were technical problems.) This data allows analysis of fish
+				  patterns over annual cycles and comparison between sites.
+				  There are approximately 10K video files each about 50 Mb long
+				  (Oct 1, 2010 - July 31, 2013 - 1035 days * 10 cameras).</p>
+
+				  <p>Select the start and stop days desired by clicking in the 'Day'
+				  boxes to pop-up a calendar. Select the camera(s) and sites.
+				  Select multiples sites/cameras by using the CTRL-click on
+				  the desired selections. Not all sites had 4 cameras (see above for
+				  more information).</p>
+
+				  <p>When you click 'Download', the system will produce 2 or more 'zip' files,
+				  which will appear as clickable links below, along with the file sizes.
+				  One zip file will contain all selected SQL files.
+				  The other zip files will contain up to 5GB of video files in each download.</p>
+					<form id="allyears" name="allyears" method="get" action="functions/search_all_years.php">
+						<table class="form-table">
+							<tbody>
+								<tr>
+									<td><label for="startday">Start Day: </label><input type="text" id="startday" name="startday"/></td>
+									<td><label for="stopday">Stop Day: </label><input type="text" id="stopday" name="stopday" /></td>
+									<td><label for="site">Sites &amp; Cameras: </label>
+									<select class="multiselect" name="sitencamera[]" multiple="multiple" size="2">
+											<option value="site1-camera1">NPP - Camera 1</option>
+											<option value="site1-camera2">NPP - Camera 2</option>
+											<option value="site1-camera3">NPP - Camera 3</option>
+											<option value="site1-camera4">NPP - Camera 4</option>
+											<option value="site2-camera1">HoBiHu Harbour - Camera 1</option>
+											<option value="site2-camera2">HoBiHu Harbour - Camera 2</option>
+											<option value="site3-camera1">Lanyu/Orchid Island - Camera 1</option>
+											<option value="site3-camera2">Lanyu/Orchid Island - Camera 2</option>
+											<option value="site4-camera1">Kenting Harbour - Camera 1</site>
+											<option value="site4-camera2">Kenting Harbour - Camera 2</site>
+									</select></td>
+									<!-- <td><label for="site">Site: </label>
+									<select name="site[]" multiple="multiple">
+											<option value="site1">NPP</option>
+											<option value="site2">HoBiHu harbour</option>
+											<option value="site3">Lanyu/Orchid Island</option>
+											<option value="site4">Kenting Harbour</site>
+										</select></td>
+									<td><label for="cameras">Cameras: </label>
+									<select name="cameras[]" multiple="multiple">
+										<option value="camera1">Camera 1</option>
+										<option value="camera2">Camera 2</option>
+										<option value="camera3">Camera 3</option>
+										<option value="camera4">Camera 4</option>
+									</select></td> -->
+								</tr>
+								<tr>
+									<td/>
+									<td/>
+									<td/>
+									<td><input class="searchbtn" type="submit" value="search" /></td>
+								</tr>
+							</tbody>
+						</table>					
+					</form>
+				</div>
+				<div id="tab2">
+				  <p>The "Full Day" dataset consists of video from all cameras at the 4 sites,
+				  for all time periods (6:00 - 18:00, the daylight hours), but for only
+				  a single date: April ***, 2011. (Except for these videos, where there
+				  were technical problems: ***.) This data allows analysis of fish
+				  patterns over a full day period and comparison between sites.
+				  There are 720 videos (10 cameras * 12 hours * 6 10 minute clips).</p>
+
+				  <p>Select the start and stop times desired, as well as which camera(s)
+				  and sites. Select multiples sites/cameras by using the CTRL-click on
+				  the desired selections. Not all sites had 4 cameras (see above for
+				  more information).</p>
+
+				  <p>When you click 'Download', the system will produce 2 'zip' files,
+				  which will appear as 2 clickable links below, along with the file sizes.
+				  The zip files will contain all selected SQL and video files in one
+				  download.</p>	
+				
+					<form id="fullday" name="fullday" method="get" action="functions/search_full_day.php">
+						<table class="form-table">
+							<tbody>
+								<tr>
+									<td><label for="fulldate">Day: </label><input type="text" id="fulldate" name="fulldate"/></td>
+									<td><label for="starttime">Start Time: </label><select name="starttime" id="starttime" class="singleselect">
+									<!--	<option value="00:00">0:00</option>
+										<option value="01:00">1:00</option>
+										<option value="02:00">2:00</option>
+										<option value="03:00">3:00</option>
+										<option value="04:00">4:00</option>
+										<option value="05:00">5:00</option> -->
+										<option value="06:00" selected="selected">6:00</option>
+										<option value="06:30">6:30</option>
+										<option value="07:00">7:00</option>
+										<option value="07:30">7:30</option>
+										<option value="08:00">8:00</option>
+										<option value="08:30">8:30</option>
+										<option value="09:00">9:00</option>
+										<option value="09:30">9:30</option>
+										<option value="10:00">10:00</option>
+										<option value="10:30">10:30</option>
+										<option value="11:00">11:00</option>
+										<option value="11:30">11:30</option>
+										<option value="12:00">12:00</option>
+										<option value="12:30">12:30</option>
+										<option value="13:00">13:00</option>
+										<option value="13:30">13:30</option>
+										<option value="14:00">14:00</option>
+										<option value="14:30">14:30</option>
+										<option value="15:00">15:00</option>
+										<option value="15:30">15:30</option>
+										<option value="16:00">16:00</option>
+										<option value="16:30">16:30</option>
+										<option value="17:00">17:00</option>
+										<option value="17:30">17:30</option>
+										<option value="18:00">18:00</option>
+									<!--	<option value="19:00">19:00</option>
+										<option value="20:00">20:00</option>
+										<option value="21:00">21:00</option>
+										<option value="22:00">22:00</option>
+										<option value="23:00">23:00</option> -->
+									</select></td>
+									<td><label for="stoptime">Stop time:</label><select name="stoptime" id="stoptime" class="singleselect">
+									<!--	<option value="00:00">0:00</option>
+										<option value="01:00">1:00</option>
+										<option value="02:00">2:00</option>
+										<option value="03:00">3:00</option>
+										<option value="04:00">4:00</option>
+										<option value="05:00">5:00</option> -->
+										<option value="06:00">6:00</option>
+										<option value="06:30">6:30</option>
+										<option value="07:00">7:00</option>
+										<option value="07:30">7:30</option>
+										<option value="08:00">8:00</option>
+										<option value="08:30">8:30</option>
+										<option value="09:00">9:00</option>
+										<option value="09:30">9:30</option>
+										<option value="10:00">10:00</option>
+										<option value="10:30">10:30</option>
+										<option value="11:00">11:00</option>
+										<option value="11:30">11:30</option>
+										<option value="12:00">12:00</option>
+										<option value="12:30">12:30</option>
+										<option value="13:00">13:00</option>
+										<option value="13:30">13:30</option>
+										<option value="14:00">14:00</option>
+										<option value="14:30">14:30</option>
+										<option value="15:00">15:00</option>
+										<option value="15:30">15:30</option>
+										<option value="16:00">16:00</option>
+										<option value="16:30">16:30</option>
+										<option value="17:00">17:00</option>
+										<option value="17:30">17:30</option>
+										<option value="18:00" selected="selected">18:00</option>
+									<!--	<option value="19:00">19:00</option>
+										<option value="20:00">20:00</option>
+										<option value="21:00">21:00</option>
+										<option value="22:00">22:00</option>
+										<option value="23:00">23:00</option> -->
+									</select></td>
+									<td><label for="site">Sites &amp; Cameras: </label>
+									<select class="multiselect" name="sitencamera[]" multiple="multiple" size="1">
+											<option value="site1-camera1">NPP - Camera 1</option>
+											<option value="site1-camera2">NPP - Camera 2</option>
+											<option value="site1-camera3">NPP - Camera 3</option>
+											<option value="site1-camera4">NPP - Camera 4</option>
+											<option value="site2-camera1">HoBiHu Harbour - Camera 1</option>
+											<option value="site2-camera2">HoBiHu Harbour - Camera 2</option>
+											<option value="site3-camera1">Lanyu/Orchid Island - Camera 1</option>
+											<option value="site3-camera2">Lanyu/Orchid Island - Camera 2</option>
+											<option value="site4-camera1">Kenting Harbour - Camera 1</site>
+											<option value="site4-camera2">Kenting Harbour - Camera 2</site>
+									</select></td>
+									<!-- <td><label for="site">Site: </label>
+									<select name="site[]" multiple="multiple">
+										<option value="site1">NPP</option>
+										<option value="site2">HoBiHu harbour</option>
+										<option value="site3">Lanyu/Orchid Island</option>
+										<option value="site4">Kenting Harbour</site>
+									</select></td>
+									<td><label for="cameras">Cameras: </label>
+									<select name="cameras[]" multiple="multiple">
+										<option value="camera1">Camera 1</option>
+										<option value="camera2">Camera 2</option>
+										<option value="camera3">Camera 3</option>
+										<option value="camera4">Camera 4</option>
+									</select></td> -->
+								</tr>
+								<tr>
+									<td/>
+									<td/>
+									<td/>
+									<td><input class="searchbtn" type="submit" value="search" /></td>
+								</tr>
+							</tbody>
+						</table>						
+					</form>
+				</div>
+			</div>
+		      </td>
+		    </tr>
+		  </tbody>
+		</table>
+
+		<br><br>
+		<br><br>
+	      </div>
+	    </td>
+	    <td width="191" valign="top">
+	      <div id="body">
+		<div id="leftframe">
+		  <div id="menu">
+		    <table cellpadding="0" cellspacing="0" border="0">
+		      <tr>
+			<td width="150" valign="top">
+			  <table width="150" cellspacing="0" cellpadding="0" border="0">
+			    <tr>
+			      <td><img alt="" src="images/spacer.gif" width="150" height="29" border="0"></td>
+			    </tr>
+			    <tr>
+			      <td height="13"><img alt="" src="images/spacer.gif" width="1" height="1" border="0"></td>
+			    </tr>
+			    <tr>
+			      <td height="1" bgcolor="#a8b26f"><img alt="" src="images/spacer.gif" width="1" height="1" 
+border="0"></td>
+			    </tr>
+			    <tr>
+			      <td align="left" height="17" valign="middle"><a href="index.html" class="menulink">Home</a>
+			    </tr>
+			    <tr>
+			      <td height="1" bgcolor="#a8b26f"><img alt="" src="images/spacer.gif" width="1" height="1" 
+border="0"></td>
+			    </tr>
+			    <tr>
+			      <td align="left" height="17" valign="middle"><a href="overview.htm" class="menulink">Overview</a>
+			    </tr>
+			    <tr>
+			      <td height="1" bgcolor="#a8b26f"><img alt="" src="images/spacer.gif" width="1" height="1" 
+border="0"></td>
+			    </tr>
+			    <tr>
+			      <td align="left" height="17" valign="middle"><a href="people.htm" class="menulink">People</a>
+			    </tr>
+			    <tr>
+			      <td height="1" bgcolor="#a8b26f"><img alt="" src="images/spacer.gif" width="1" height="1" 
+border="0"></td>
+			    </tr>
+			    <tr>
+			      <td align="left" height="17" valign="middle"><a href="resources.htm" class="menulink">Resources</a>
+			    </tr>
+			    <tr>
+			      <td height="1" bgcolor="#a8b26f"><img alt="" src="images/spacer.gif" width="1" height="1" 
+border="0"></td>
+			    </tr>
+			    <tr>
+			      <td align="left" height="17" valign="middle"><a href="news.htm" class="menulink">News</a>
+			    </tr>
+			    <tr>
+			      <td height="1" bgcolor="#a8b26f"><img alt="" src="images/spacer.gif" width="1" height="1" 
+border="0"></td>
+			    </tr>
+			    <tr>
+			      <td align="left" height="17" valign="middle"><a href="contact.htm" class="menulink">Contact</a>
+			    </tr>
+			    <tr>
+			      <td height="1" bgcolor="#a8b26f"><img alt="" src="images/spacer.gif" width="1" height="1" 
+border="0"></td>
+			    </tr>
+			    <tr>
+			      <td align="left" height="17" valign="middle"><a href="MEMBERS/index.html" class="menulink">Members 
+Only</a></td>
+			    </tr>
+			    <tr>
+			      <td height="1" bgcolor="#a8b26f"><img alt="" src="images/spacer.gif" width="1" height="1" 
+border="0"></td>
+			    </tr>
+			    <tr>
+			      <td align="left" height="17" valign="middle"><a href="search.html" class="menulink">Search</a></td>
+			    </tr>
+			    <tr>
+			      <td height="1" bgcolor="#a8b26f"><img alt="" src="images/spacer.gif" width="1" height="1" 
+border="0"></td>
+			    </tr>
+
+			  </table>
+			</td>
+		      </tr>
+		    </table>
+
+
+		  </div>
+		</div>
+	      </div>
+
+	    </td>
+    	  </tr>
+	</table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
