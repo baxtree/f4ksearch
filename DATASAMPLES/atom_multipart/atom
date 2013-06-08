@@ -1,18 +1,14 @@
 <?xml version="1.0"?>
 <entry xmlns="http://www.w3.org/2005/Atom" xmlns:dcterms="http://purl.org/dc/terms/">
 	<title>site1_camera2_201202051210</title>
-	<id>urn:uuid:1225c695-cfb8-4ebb-aaaa-80da344efa6a</id>
-	<updated>20013-06-07T12:00:00Z</updated>
-	<author>
-		<name>Xi Bai</name>
-	</author>
-	<summary type="text"><![CDATA[This dataset contains videos and processed results from a set of up to 10
+	<author><name>Bob Fisher, Bas Boom, Xi Bai</name></author>
+	<summary>This dataset contains videos and processed results from a set of up to 10
 stationary undersea cameras (in Taiwan) that are observing tropical coral reef fish.
 The data was acquired over the period Oct 1, 2010 through Sept 30, 2013.
 The dataset contains: a) a set of 10 minute videos (approximately 11K clips),
 b) a set of files describing the fish detected, tracked and recognised in each
 of the videos with one file per video, and c) the full set of detected, tracked and recognised fish from the 3 year project.
-The dataset presented here is a < 1T subset of the full 400T dataset
+The dataset presented here is a &lt; 1T subset of the full 400T dataset
 organised as follows:
 a) one video clip from each camera from each project day captured at approximately 12:00 noon
 (approximately 365*3*10 clips, although not all cameras were working at all times).
@@ -23,38 +19,34 @@ b) one video clip from each camera at every 10 minute interval between
 This gives some idea of how the data changes over a day.
 c) a set of records describing the detected, tracked and recognised fish. These plain-text files are a dump of the associated SQL datasets,
 recording the site, camera, time, frame, location in frame, and species of each detected fish,
-along with certainty factors and tracking information linking fish frame-to-frame.]]></summary>
-	<!-- some embedded metadata -->
-	<dcterms:title>site1_camera2_201202051210</dcterms:title>
+along with certainty factors and tracking information linking fish frame-to-frame.</summary>
+	<dcterms:abstract>This dataset contains videos and processed results from a set of up to 10
+stationary undersea cameras (in Taiwan) that are observing tropical coral reef fish.
+The data was acquired over the period Oct 1, 2010 through Sept 30, 2013.
+The dataset contains: a) a set of 10 minute videos (approximately 11K clips),
+b) a set of files describing the fish detected, tracked and recognised in each
+of the videos with one file per video, and c) the full set of detected, tracked and recognised fish from the 3 year project.
+The dataset presented here is a &lt; 1T subset of the full 400T dataset
+organised as follows:
+a) one video clip from each camera from each project day captured at approximately 12:00 noon
+(approximately 365*3*10 clips, although not all cameras were working at all times).
+This gives some idea of how the data changes over the seasons.
+b) one video clip from each camera at every 10 minute interval between
+6:00 and 18:00 from a specific day
+(approximately 72*10 clips, although not all cameras were working at all times).
+This gives some idea of how the data changes over a day.
+c) a set of records describing the detected, tracked and recognised fish. These plain-text files are a dump of the associated SQL datasets,
+recording the site, camera, time, frame, location in frame, and species of each detected fish,
+along with certainty factors and tracking information linking fish frame-to-frame.</dcterms:abstract>
 	<dcterms:contributor>Bob Fisher, Bas Boom, Xi Bai</dcterms:contributor>
-	<dcterms:publisher>Institute of Perception, Action &amp; Behaviour (IPAB), School of Informatics, University of Edinburgh</dcterms:publisher>
+	<dcterms:publisher>Institute of Perception, Action &amp;amp; Behaviour (IPAB), School of Informatics, University of Edinburgh</dcterms:publisher>
 	<dcterms:type>Dataset</dcterms:type>
 	<dcterms:spatial>Taiwan</dcterms:spatial>
 	<dcterms:coverage>start=2012-02-05T12:10:00Z; end=2012-02-05T12:20:00Z; scheme=W3C-DTF</dcterms:coverage>
 	<dcterms:creator>Fish4Knowledge Project + Taiwan NCHC</dcterms:creator>
-	<dcterms:abstract><![CDATA[This dataset contains videos and processed results from a set of up to 10
-stationary undersea cameras (in Taiwan) that are observing tropical coral reef fish.
-The data was acquired over the period Oct 1, 2010 through Sept 30, 2013.
-The dataset contains: a) a set of 10 minute videos (approximately 11K clips),
-b) a set of files describing the fish detected, tracked and recognised in each
-of the videos with one file per video, and c) the full set of detected, tracked and recognised fish from the 3 year project.
-The dataset presented here is a < 1T subset of the full 400T dataset
-organised as follows:
-a) one video clip from each camera from each project day captured at approximately 12:00 noon
-(approximately 365*3*10 clips, although not all cameras were working at all times).
-This gives some idea of how the data changes over the seasons.
-b) one video clip from each camera at every 10 minute interval between
-6:00 and 18:00 from a specific day
-(approximately 72*10 clips, although not all cameras were working at all times).
-This gives some idea of how the data changes over a day.
-c) a set of records describing the detected, tracked and recognised fish. These plain-text files are a dump of the associated SQL datasets,
-recording the site, camera, time, frame, location in frame, and species of each detected fish,
-along with certainty factors and tracking information linking fish frame-to-frame.]]>
-	</dcterms:abstract>
-	<dcterms:isVersionOf>http://isversionof.data.set</dcterms:isVersionOf>
-	<dcterms:isReferencedBy>http://isreferencedby.data.set</dcterms:isReferencedBy>
 	<dcterms:tableOfContents>datetime:2012-02-05T12:10:00Z,site:NPP,camera:2,id:1</dcterms:tableOfContents>
-	<!-- <dcterms:replaces></dcterms:replaces> -->
 	<dcterms:source>NPP</dcterms:source>
-	<!-- <dcterms:alternative></dcterms:alternative> -->
+	<dcterms:creator>Wilson, Scott</dcterms:creator>
+	<dcterms:identifier>10.1108/00330330910998057</dcterms:identifier>
+	<dcterms:title>site1_camera2_201202051210</dcterms:title>
 </entry>
