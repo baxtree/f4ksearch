@@ -1,7 +1,9 @@
 <?xml version="1.0"?>
 <entry xmlns="http://www.w3.org/2005/Atom" xmlns:dcterms="http://purl.org/dc/terms/">
 	<title>site1_camera2_201202051210</title>
-	<author><name>Bob Fisher, Bas Boom, Xi Bai</name></author>
+	<author><name>Bob Fisher</name></author>
+	<author><name>Bas Boom</name></author>
+	<author><name>Xi Bai</name></author>
 	<summary>This dataset contains videos and processed results from a set of up to 10
 stationary undersea cameras (in Taiwan) that are observing tropical coral reef fish.
 The data was acquired over the period Oct 1, 2010 through Sept 30, 2013.
@@ -44,9 +46,6 @@ along with certainty factors and tracking information linking fish frame-to-fram
 	<dcterms:spatial>Taiwan</dcterms:spatial>
 	<dcterms:coverage>start=2012-02-05T12:10:00Z; end=2012-02-05T12:20:00Z; scheme=W3C-DTF</dcterms:coverage>
 	<dcterms:creator>Fish4Knowledge Project + Taiwan NCHC</dcterms:creator>
-	<dcterms:tableOfContents>datetime:2012-02-05T12:10:00Z,site:NPP,camera:2,id:1</dcterms:tableOfContents>
-	<dcterms:source>NPP</dcterms:source>
-	<dcterms:creator>Wilson, Scott</dcterms:creator>
-	<dcterms:identifier>10.1108/00330330910998057</dcterms:identifier>
+	<dcterms:source>site:NPP,camera:2,video:1</dcterms:source>
 	<dcterms:title>site1_camera2_201202051210</dcterms:title>
 </entry>
