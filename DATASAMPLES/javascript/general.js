@@ -13,14 +13,15 @@ $(document).ready(function () {
 		});
 		$(".multiselect").multiselect({
  			"noneSelectedText" : "Select sites and cameras",
- 			"classes" : "checkbox"
+ 			"classes" : "checkbox",
+ 			"selectedList" : 3
 		});
 		$(".singleselect").multiselect({
 			"multiple" : false,
 			"classes" : "radio",
 			"header" : "Hour : Min",
 			"noneSelectedText" : "Select a time",
-			"selectedList" : 1
+			"selectedList" : 3
 
 		});
 		$(".filename:odd").addClass("odd");
