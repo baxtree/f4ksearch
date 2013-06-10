@@ -10,16 +10,17 @@
 	$prefix = $_POST["prefix"];
 	
 	$zip = new ZipArchive;
-	$zippartcounter = 1;
+	
 	$time = time();
 	$videozipname = "f4k_flv_" . $prefix . "_" . $time . ".zip";
 	$csvzipname = "f4k_csv_" . $prefix . "_" . $time . ".zip";
 	$videoziparray = array();
+	$csvziparray = array();
 	
 	// $csvziparray = array();
 	// array_push($csvziparray, $csvzipname);
 	$sizeaccumulator = 0;
-	
+	$zippartcounter = 1;
 	$videozippath = "../TMP/VIDEOS/$videozipname";
 	array_push($videoziparray, $videozippath);
 	
@@ -51,26 +52,43 @@
 		}
 	}
 	else {
-		echo "Cannot open the ../TMP/VIDEOS/$videozipname";
+		echo "No video files to download ...";
 	}
 	
-
+	$sizeaccumulator = 0;
+	$zippartcounter = 1;
 	$csvzippath = "../TMP/SQL/$csvzipname";
+	array_push($csvziparray, $csvzippath);
 	
 	if ($zip->open($csvzippath, ZIPARCHIVE::CREATE | ZIPARCHIVE::OVERWRITE) === true) {
 		foreach ($csvfiles as $csvfile) {
-			$zip->addFile($csvfile);
+			$sizeaccumulator += filesize($csvfile);
+			if($sizeaccumulator > 2000000000) { //make the maximum size of each downloadable csv zip less than 2 GBs
+				$zip->close();
+				$zippartcounter++;
+				$csvzipname = "f4k_flv" . $prefix . "_" . $time . "_part" . "$zippartcounter" . ".zip";
+				$csvzippath = "../TMP/SQL/$csvzipname";
+				array_push($csvziparray, $csvzippath);
+				if ($zip->open($csvzippath, ZIPARCHIVE::CREATE | ZIPARCHIVE::OVERWRITE) === true) {
+					$zip->addFile($csvfile);
+				}
+			}
+			else {
+				$zip->addFile($csvfile);
+			}
 		}
 	}
 	
 	$zip->close();
 	
 	if (count($csvfiles) != 0) {
-		chmod($csvzippath, 0775);
-		echo "<tr class='download'><td><a href='../TMP/SQL/$csvzipname'>Click to download all the CSVs as ZIP (" . number_format(filesize($csvzippath)/1048576, 3) . " MBs) ...</a></td></tr>";		
+		foreach ($csvziparray as $csvzip) {
+			chmod($csvzippath, 0775);
+			echo "<tr class='download'><td><a href='../TMP/SQL/$csvzipname'>Click to download all the CSVs as ZIP (" . number_format(filesize($csvzip)/1048576, 3) . " MBs) ...</a></td></tr>";					
+		}
 	}
 	else {
-		echo "Cannot open the ../TMP/VIDEOS/$csvzipname";
+		echo "No CSV files to download ...";
 	}
 	
 	echo "<tr/><tr/>";
