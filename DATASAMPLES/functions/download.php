@@ -51,7 +51,7 @@
 	if (count($videofiles) != 0) {
 		foreach ($videoziparray as $videozip) {
 			chmod($videozip, 0775);
-			echo "<tr class='download'><td><a href='$videozip'>Click to download all the videos as ZIP (file size: " . number_format(filesize($videozip)/1048576, 3) . " MBs, estimated download time: " . number_format(((filesize($videozip)/1024)/$transfer_rate)/60.0, 2) . " minutes) ...</a></td></tr>";
+			echo "<tr class='download'><td><a href='$videozip'>Click to download all the videos as ZIP (file size: " . number_format(filesize($videozip)/1048576, 3) . " MBs, estimated download time: " . number_format(((filesize($videozip)/1024)/$transfer_rate)/60.0, 2) . " minute(s)) ...</a></td></tr>";
 		}
 	}
 	else {
@@ -87,7 +87,7 @@
 	if (count($csvfiles) != 0) {
 		foreach ($csvziparray as $csvzip) {
 			chmod($csvzippath, 0775);
-			echo "<tr class='download'><td><a href='../TMP/SQL/$csvzipname'>Click to download all the CSVs as ZIP (file size: " . number_format(filesize($csvzip)/1048576, 3) . " MBs, estimated download time: " . number_format(((filesize($csvzip)/1024)/$transfer_rate)/60.0, 2) . " minutes) ...</a></td></tr>";					
+			echo "<tr class='download'><td><a href='../TMP/SQL/$csvzipname'>Click to download all the CSVs as ZIP (file size: " . number_format(filesize($csvzip)/1048576, 3) . " MBs, estimated download time: " . number_format(((filesize($csvzip)/1024)/$transfer_rate)/60.0, 2) . " minute(s)) ...</a></td></tr>";					
 		}
 	}
 	else {

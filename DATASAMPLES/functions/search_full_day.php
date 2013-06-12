@@ -1,16 +1,19 @@
 <?php
 
+	require(dirname(__FILE__) . "/../templates/_header.php");
+
 	require_once("utils.php");
+	if (isset($_GET["starttime"]) || isset($_GET["stoptime"]) || isset($_GET["sitencamera"])) {
+		die("<tr><td valign='top' style='width: 700px'><h3>Input error. Start Time, Stop Time or Sites &amp; Cameras is not valid. </h3></tr><tr class='backtosearch'><td><a href='../search.html'>Back to Search</a></td></tr>");
+	}
+
 	
 	$startdate = new DateTime(DateTime::createFromFormat("d/m/Y", $_GET["fulldate"])->format("m/d/Y") . " " . $_GET["starttime"]);
 	$stopdate = new DateTime(DateTime::createFromFormat("d/m/Y", $_GET["fulldate"])->format("m/d/Y") . " " . $_GET["stoptime"]);
 	// $sites = $_GET["site"];
 	// 	$cameras = $_GET["cameras"];
 	$sitesncameras = $_GET["sitencamera"];
-	
-	
-	require(dirname(__FILE__) . "/../templates/_header.php");
-	
+
 	echo "<tr><td valign='top' style='width: 700px'><h3>Search Results (first 50 results listed)</h3></tr>";
 	
 	$videofiles = array();

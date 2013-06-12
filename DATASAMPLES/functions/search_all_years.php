@@ -1,6 +1,11 @@
 <?php
+
+	require(dirname(__FILE__) . "/../templates/_header.php");
 	
 	require_once("utils.php");
+	if (isset($_GET["startday"]) || isset($_GET["stopday"]) || isset($_GET["sitencamera"])) {
+		die("<tr><td valign='top' style='width: 700px'><h3>Input error. Start Day, Stop Day or Sites &amp; Cameras is not valid. </h3></tr><tr class='backtosearch'><td><a href='../search.html'>Back to Search</a></td></tr>");
+	}
 
 	$startdate = new DateTime(DateTime::createFromFormat("d/m/Y", $_GET["startday"])->format("Y-m-d") . " 00:00:00");
 	$stopdate = new DateTime(DateTime::createFromFormat("d/m/Y", $_GET["stopday"])->format("Y-m-d") . " 23:00:00");
@@ -17,7 +22,7 @@
 		echo $camera;
 	}
 */
-	require(dirname(__FILE__) . "/../templates/_header.php");
+	
 	
 	echo "<tr><td valign='top' style='width: 700px'><h3>Search Results (first 50 results listed)</h3></tr>";
 	
