@@ -28,7 +28,7 @@ There are no other restrictions on the use of the dataset.]]></rights>
 	<dcterms:publisher>Institute of Perception, Action &amp; Behaviour (IPAB), School of Informatics, University of Edinburgh</dcterms:publisher>
 	<dcterms:type>Dataset</dcterms:type>
 	<dcterms:spatial>Taiwan</dcterms:spatial>
-	<dcterms:coverage>start=2012-02-05T12:10:00Z; end=2012-02-05T12:20:00Z; scheme=W3C-DTF</dcterms:coverage>
+	<dcterms:coverage>start=2012-02-05T12:10:00+08:00; end=2012-02-05T12:20:00+08:00; scheme=W3C-DTF</dcterms:coverage>
 	<dcterms:creator>Fish4Knowledge Project</dcterms:creator>
 	<dcterms:creator>Taiwan NCHC</dcterms:creator>
 	<dcterms:abstract><![CDATA[This entry has one 10 minute video (flv) plus the associated fish detection data (compressed SQL csv),
