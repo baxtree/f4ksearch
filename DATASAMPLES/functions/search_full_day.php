@@ -87,6 +87,8 @@
 		echo "	<input type='submit' value='Download as ZIPs' />";	
 		echo "</form></td></tr>";
 		echo "<tr><td>(Note: " . number_format($totalvideosize/1048576, 3) . " MBs of FLV files and " . number_format($totalcsvsize/1048576, 3) . " MBs of CSV files will be downloaded after decompressions.)</td></tr>";
+		echo "<tr/><tr/>";
+		echo "<tr class='backtosearch'><td><a href='../search.html'>Back to Search</a></td></tr>";
 	}
 	
 	require(dirname(__FILE__) . "/../templates/_footer.php");

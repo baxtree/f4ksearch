@@ -29,6 +29,28 @@ http://validator.w3.org/check?uri=http%3A%2F%2Fhomepages.inf.ed.ac.uk%2Frbf%2FFi
   <script type="text/javascript" src="jquery/jquery.multiselect.min.js"></script>
   <script type="text/javascript" src="javascript/general.js"></script>
   <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript">
+  	function microtime (get_as_float) {
+	    var now = new Date().getTime() / 1000;
+	    var s = parseInt(now, 10);
+	
+	    return (get_as_float) ? now : (Math.round((now - s) * 1000) / 1000) + ' ' + s;
+	}
+	
+	function setCookie(c_name, value, expiredays) {
+		var exdate=new Date();
+		exdate.setDate(exdate.getDate() + expiredays);
+		document.cookie=c_name + "=" + escape(value) + ((expiredays==null) ? "" : ";expires=" + exdate.toUTCString());
+	}
+	
+	start = microtime(true);
+	
+	$(document).ready(function () {
+	  end = microtime(true);
+	  diff = end - start;
+	  setCookie("search_test_cookie", diff, 30);
+	});
+  </script>
 </head>
 
 <body bgcolor="#FFFFFF">
