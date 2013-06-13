@@ -3,7 +3,7 @@
 	require(dirname(__FILE__) . "/../templates/_header.php");
 
 	require_once("utils.php");
-	if (isset($_GET["starttime"]) || isset($_GET["stoptime"]) || isset($_GET["sitencamera"])) {
+	if (!isset($_GET["starttime"]) || !isset($_GET["stoptime"]) || !isset($_GET["sitencamera"])) {
 		die("<tr><td valign='top' style='width: 700px'><h3>Input error. Start Time, Stop Time or Sites &amp; Cameras is not valid. </h3></tr><tr class='backtosearch'><td><a href='../search.html'>Back to Search</a></td></tr>");
 	}
 

@@ -1,8 +1,10 @@
 <?xml version="1.0"?>
+<!-- ITEM_NAME has the format siteN-cameraN-YYYYMMDDHHMM, e.g., site1_camera2_201202051210 -->
+<!-- CURRENT_TIME, START_TIME and END_TIME have the format YYYY-MM-DDTHH:MM:SS, e.g., 2012-02-05T12:10:00 -->
 <entry xmlns="http://www.w3.org/2005/Atom" xmlns:dcterms="http://purl.org/dc/terms/">
-	<title>site1_camera2_201202051210</title>
+	<title>{{ITEM_NAME}}</title>
 	<id>urn:uuid:1225c695-cfb8-4ebb-aaaa-80da344efa6a</id>
-	<updated>20013-06-07T12:00:00Z</updated>
+	<updated>{{CURRENT_TIME}}Z</updated>
 	<author>
 		<name>Xi Bai</name>
 	</author>
@@ -23,12 +25,12 @@ Behavior (VAIB), in conjunction with ICPR 2012, Tsukuba, Japan, 2012."
 There are no other restrictions on the use of the dataset.]]></rights>
 	<language>eng</language>
 	<!-- some embedded metadata -->
-	<dcterms:title>site1_camera2_201202051210</dcterms:title>
+	<dcterms:title>{{ITEM_NAME}}</dcterms:title>
 	<dcterms:contributor>Bob Fisher, Bas Boom, Xi Bai</dcterms:contributor>
 	<dcterms:publisher>Institute of Perception, Action &amp; Behaviour (IPAB), School of Informatics, University of Edinburgh</dcterms:publisher>
 	<dcterms:type>Dataset</dcterms:type>
-	<dcterms:spatial>Taiwan</dcterms:spatial>
-	<dcterms:coverage>start=2012-02-05T12:10:00+08:00; end=2012-02-05T12:20:00+08:00; scheme=W3C-DTF</dcterms:coverage>
+	<dcterms:spatial>{{SITE_NAME}} ({{CAMERA_ID}}), Taiwan</dcterms:spatial>
+	<dcterms:coverage>start={{START_TIME}}+08:00; end={{END_TIME}}+08:00; scheme=W3C-DTF</dcterms:coverage>
 	<dcterms:creator>Fish4Knowledge Project</dcterms:creator>
 	<dcterms:creator>Taiwan NCHC</dcterms:creator>
 	<dcterms:abstract><![CDATA[This entry has one 10 minute video (flv) plus the associated fish detection data (compressed SQL csv),
