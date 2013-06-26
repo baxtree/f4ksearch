@@ -1,4 +1,7 @@
 <?php
+/*
+ * This file will be displayed when an error occurs.
+ */
 	require(dirname(__FILE__). "/../templates/_header.php");
 	
 	echo "<tr><td valign='top' style='width: 700px'><h3>Error</h3></tr>";

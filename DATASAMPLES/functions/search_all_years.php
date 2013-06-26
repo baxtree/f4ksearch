@@ -1,4 +1,7 @@
 <?php
+/*
+ * This file is used for search video files and CSV files from the ALLYEARS folder based on a user's inputs including the start date, the stop date and the site & camera.
+ */
 
 	require(dirname(__FILE__) . "/../templates/_header.php");
 	

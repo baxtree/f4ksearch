@@ -1,5 +1,7 @@
 <?php
-
+/*
+ * This file is used for search video files and CSV files from the ALLYEARS folder based on a user's inputs including the start date, the stop date and the site & camera. Note that a temporary date picker is currently used for testing the "Full Day" search at /DATASAMPLES/search.html and it will be removed in the future and a default date will be applied behind the scene. 
+ */
 	require(dirname(__FILE__) . "/../templates/_header.php");
 
 	require_once("utils.php");
@@ -25,7 +27,7 @@
 	
 	echo "<tr><td><h4>Videos:</h4></td></tr>";
 	
-	foreach (glob("../VIDEOS/ALLYEARS/*.flv") as $filename) {
+	foreach (glob("../VIDEOS/FULLDAY/*.flv") as $filename) {
 		if (newmatched($filename, $sitesncameras, $startdate, $stopdate)) {
 		// if (matched($filename, $sites, $cameras, $startdate, $stopdate)) {
 			// echo "matched!<br/>";
@@ -54,7 +56,7 @@
 	
 	$counter = 0;
 	
-	foreach (glob("../SQL/ALLYEARS/*.csv") as $filename) {
+	foreach (glob("../SQL/FULLDAY/*.csv") as $filename) {
 		if (newmatched($filename, $sitesncameras, $startdate, $stopdate)) {
 		// if (matched($filename, $sites, $cameras, $startdate, $stopdate)) {
 			// echo "matched!<br/>";

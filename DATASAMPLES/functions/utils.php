@@ -1,4 +1,13 @@
 <?php
+/*
+ * Author: Xi Bai
+ * This file provides basic funtionalities related to video files.
+ */
+ 
+/*
+ * This funtion match the given site name, the camera id, the start date and the stop date against the given file name.
+ * It returns true if they are matched and otherwise it returns false.
+ */
 	function matched($filename, $sites, $cameras, $startdate, $stopdate) {
 		// echo $startdate->format("Y/m/d H:i:s") . " " . $stopdate->format("Y/m/d H:i:s");
 		$metas = explode("_", basename($filename));
@@ -26,7 +35,10 @@
 			return false;
 		}
 	}
-	
+/*
+ * This funtion matches the given site name combined with the camera id, the start date and the stop date against the given file name.
+ * It returns true if they are matched and otherwise it returns false.
+ */
 	function newmatched($filename, $sitesncameras, $startdate, $stopdate) {
 		// echo $startdate->format("Y/m/d H:i:s") . " " . $stopdate->format("Y/m/d H:i:s");
 		$metas = explode("_", basename($filename));
@@ -49,7 +61,9 @@
 			return false;
 		}
 	}
-	
+/*
+ * This function estimates the download time based on DSL, ISDN and Modem. (Deprecated)
+ */	
 	function download_time($file) {
 	    if(!function_exists("sec_format")) {
 	        function sec_format($seconds) {

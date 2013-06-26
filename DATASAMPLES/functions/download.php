@@ -1,4 +1,7 @@
 <?php
+/*
+ * This file is used for lazily generating compressed video files and CSV files after a user click the download button on the search result page. 
+ */
 	ini_set('max_execution_time', 120);
 	require(dirname(__FILE__) . "/../templates/_header.php");
 	$loading_time = (float) $_COOKIE["search_test_cookie"];
