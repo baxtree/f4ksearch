@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "restricted pages"
+AuthUserFile /Applications/MAMP/htdocs/Fish4Knowledge/DATASAMPLES/private/.htpasswd
+require valid-user
